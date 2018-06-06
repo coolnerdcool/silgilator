@@ -36,9 +36,12 @@ class ViewController: UIViewController {
   //MARK: IBActions
   @IBAction func todoTextField(_ sender: Any) {
     todoTextFieldText.clearsOnBeginEditing = true
+    
+    if(todoTextFieldText.isEditing){
+      todo = todoTextFieldText.text ?? " "
+      
+    }
   }
   
-  
-  
-}
+} // ViewController ends
 

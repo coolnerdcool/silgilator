@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,26 +15,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="silgilator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mo" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="zNl-ab-5dX">
-                                <rect key="frame" x="16" y="124" width="130" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mo" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNl-ab-5dX">
+                                <rect key="frame" x="16" y="36.999999999999993" width="94" height="93.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zNl-ab-5dX" secondAttribute="height" multiplier="65:36" constant="-74.527777777777771" id="5Mr-l0-rTl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="77"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11r-T5-aaG">
-                                <rect key="frame" x="16" y="204" width="273" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11r-T5-aaG">
+                                <rect key="frame" x="16" y="140" width="191.66666666666666" height="27.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="11r-T5-aaG" secondAttribute="height" multiplier="44:27" constant="147" id="p1G-Rw-cWO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter an item to the list..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNU-fQ-mNE">
-                                <rect key="frame" x="16" y="233" width="293" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter an item to the list..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNU-fQ-mNE">
+                                <rect key="frame" x="16" y="191" width="452" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="585" id="73b-n4-smP"/>
+                                    <constraint firstAttribute="width" secondItem="ZNU-fQ-mNE" secondAttribute="height" multiplier="39:1" constant="-133" id="9IX-6L-QPw"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -44,6 +51,17 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="11r-T5-aaG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7og-Ao-DGv"/>
+                            <constraint firstItem="11r-T5-aaG" firstAttribute="top" secondItem="zNl-ab-5dX" secondAttribute="bottom" constant="9.6666666666666856" id="NVk-ok-IGb"/>
+                            <constraint firstItem="ZNU-fQ-mNE" firstAttribute="top" secondItem="11r-T5-aaG" secondAttribute="bottom" constant="23.5" id="PPo-Vf-dnx"/>
+                            <constraint firstItem="zNl-ab-5dX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="QVa-LU-5ba"/>
+                            <constraint firstItem="zNl-ab-5dX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d5A-Zh-TTk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zNl-ab-5dX" secondAttribute="trailing" symbolic="YES" id="i3s-K9-tNv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="11r-T5-aaG" secondAttribute="trailing" symbolic="YES" id="kRa-wM-l5j"/>
+                            <constraint firstItem="ZNU-fQ-mNE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lSA-Ce-Izv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZNU-fQ-mNE" secondAttribute="trailing" constant="-226" id="si5-m1-ngw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -53,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+            <point key="canvasLocation" x="133.125" y="131.25"/>
         </scene>
     </scenes>
 </document>
