@@ -10,13 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
  
+  //MARK: IBOutlet's
   @IBOutlet var dateLabel: UILabel!
+  @IBOutlet var todoTextFieldText: UITextField!
   
+  //MARK: Properties
   let year = Calendar.current.component(.year, from: Date())
   let month = Calendar.current.component(.month, from: Date())
   let date = Calendar.current.component(.day, from: Date())
-//
   
+  var todo: String = " "
+  
+  //MARK: Views Start
   override func viewWillAppear(_ animated: Bool) {
     
   }
@@ -24,8 +29,16 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     
     dateLabel.text = "\(Calendar.current.shortMonthSymbols[month - 1]) \(date) \(year)"
+    todoTextField(self)
     
   }
+  
+  //MARK: IBActions
+  @IBAction func todoTextField(_ sender: Any) {
+    todoTextFieldText.clearsOnBeginEditing = true
+  }
+  
+  
   
 }
 

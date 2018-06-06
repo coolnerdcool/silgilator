@@ -32,12 +32,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter an item to the list..." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNU-fQ-mNE">
-                                <rect key="frame" x="41" y="233" width="293" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter an item to the list..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNU-fQ-mNE">
+                                <rect key="frame" x="16" y="233" width="293" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="todoTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="yrq-vi-zMh"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,6 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="11r-T5-aaG" id="moZ-gu-1ue"/>
+                        <outlet property="todoTextFieldText" destination="ZNU-fQ-mNE" id="GIR-nk-GXC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
