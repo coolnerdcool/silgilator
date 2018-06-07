@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
  
   //MARK: IBOutlet's
   @IBOutlet var dateLabel: UILabel!
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     dateLabel.text = "\(Calendar.current.shortMonthSymbols[month - 1]) \(date) \(year)"
     todoTextField(self)
-    
+    todoTextFieldText.delegate = self
     
   }
   
@@ -41,10 +41,6 @@ class ViewController: UIViewController {
     if(todoTextFieldText.isEditing){
       todo = todoTextFieldText.text ?? " "
       
-    }
-    
-    if(textFieldShouldReturn(todoTextFieldText)){
-      print("Check 1-2")
     }
   }
   
