@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     dateLabel.text = "\(Calendar.current.shortMonthSymbols[month - 1]) \(date) \(year)"
     todoTextField(self)
     
+    
   }
   
   //MARK: IBActions
@@ -40,6 +41,10 @@ class ViewController: UIViewController {
     if(todoTextFieldText.isEditing){
       todo = todoTextFieldText.text ?? " "
       
+    }
+    
+    if(textFieldShouldReturn(todoTextFieldText)){
+      print("Check 1-2")
     }
   }
   
