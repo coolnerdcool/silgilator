@@ -50,7 +50,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
   
   func textFieldShouldReturn(_ textField: UITextField) -> Bool{
   
+    todo = todoTextFieldText.text ?? ""
     textField.resignFirstResponder()
+    print("\(todo)")
     return true
   }
 } // ViewController ends
