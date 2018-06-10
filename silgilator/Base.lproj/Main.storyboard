@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="silgilator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11r-T5-aaG">
-                                <rect key="frame" x="16" y="133" width="192" height="27.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11r-T5-aaG">
+                                <rect key="frame" x="16" y="133.66666666666666" width="191.66666666666666" height="27.333333333333343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="11r-T5-aaG" secondAttribute="height" multiplier="44:27" constant="147" id="p1G-Rw-cWO"/>
                                 </constraints>
@@ -27,7 +27,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter an item to the list..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNU-fQ-mNE">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter an item to the list..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNU-fQ-mNE">
                                 <rect key="frame" x="16" y="194" width="288" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZNU-fQ-mNE" secondAttribute="height" multiplier="39:1" constant="-336" id="9IX-6L-QPw"/>
@@ -48,29 +48,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ced-4V-TFX">
+                                <rect key="frame" x="16" y="255" width="343" height="523"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9jd-ZB-YE9">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="523"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="523" id="1xx-uu-Pe8"/>
+                                        </constraints>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9jd-ZB-YE9" firstAttribute="bottom" secondItem="ced-4V-TFX" secondAttribute="bottomMargin" id="eve-HT-1vX"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="11r-T5-aaG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7og-Ao-DGv"/>
+                            <constraint firstItem="ZNU-fQ-mNE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="194" id="919-FC-qOb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9jd-ZB-YE9" secondAttribute="trailing" constant="16" id="BKA-5p-2jm"/>
                             <constraint firstItem="ZNU-fQ-mNE" firstAttribute="leading" secondItem="11r-T5-aaG" secondAttribute="leading" id="ErC-Sw-6B5"/>
                             <constraint firstItem="11r-T5-aaG" firstAttribute="top" secondItem="zNl-ab-5dX" secondAttribute="bottom" constant="8" id="NVk-ok-IGb"/>
-                            <constraint firstItem="ZNU-fQ-mNE" firstAttribute="top" secondItem="11r-T5-aaG" secondAttribute="bottom" constant="33.5" id="PPo-Vf-dnx"/>
-                            <constraint firstItem="zNl-ab-5dX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="QVa-LU-5ba"/>
+                            <constraint firstItem="zNl-ab-5dX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="QVa-LU-5ba"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZNU-fQ-mNE" secondAttribute="trailing" constant="71" id="YWV-Vg-hSZ"/>
+                            <constraint firstItem="9jd-ZB-YE9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YlV-ph-Q5X"/>
                             <constraint firstItem="zNl-ab-5dX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d5A-Zh-TTk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZNU-fQ-mNE" secondAttribute="bottom" constant="526" id="fsb-9Q-alw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zNl-ab-5dX" secondAttribute="trailing" symbolic="YES" id="i3s-K9-tNv"/>
+                            <constraint firstItem="ZNU-fQ-mNE" firstAttribute="top" secondItem="11r-T5-aaG" secondAttribute="bottom" constant="33" id="iys-Th-rct"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="11r-T5-aaG" secondAttribute="trailing" symbolic="YES" id="kRa-wM-l5j"/>
+                            <constraint firstItem="9jd-ZB-YE9" firstAttribute="top" secondItem="ZNU-fQ-mNE" secondAttribute="bottom" constant="45" id="mMR-ae-ds8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="11r-T5-aaG" id="moZ-gu-1ue"/>
                         <outlet property="todoTextFieldText" destination="ZNU-fQ-mNE" id="GIR-nk-GXC"/>
+                        <outlet property="todosTableView" destination="9jd-ZB-YE9" id="MO1-R6-pIe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129.375" y="129.92957746478874"/>
+            <point key="canvasLocation" x="128.80000000000001" y="129.31034482758622"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
   //MARK: IBOutlet's
   @IBOutlet var dateLabel: UILabel!
   @IBOutlet var todoTextFieldText: UITextField!
+  @IBOutlet var todosTableView: UITableView!
+
   
   //MARK: Properties
   let year = Calendar.current.component(.year, from: Date())
@@ -28,6 +30,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
   
   override func viewDidLoad() {
     
+    let bottomSafeArea = todosTableView.safeAreaInsets.bottom
+    
+    todosTableView.insetsLayoutMarginsFromSafeArea = true
     dateLabel.text = "\(Calendar.current.shortMonthSymbols[month - 1]) \(date) \(year)"
     todoTextField(self)
     todoTextFieldText.delegate = self
@@ -40,7 +45,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     if(todoTextFieldText.isEditing){
       todo = todoTextFieldText.text ?? " "
-      
     }
   }
   
@@ -53,6 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     todo = todoTextFieldText.text ?? ""
     textField.resignFirstResponder()
     print("\(todo)")
+    textField.text = "Enter an item to the list..."
     return true
   }
 } // ViewController ends
