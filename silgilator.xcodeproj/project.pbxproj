@@ -74,6 +74,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D027933320D1F67500120462 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		D027933420D1F68C00120462 /* Protocol Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Protocol Classes";
+			sourceTree = "<group>";
+		};
 		D059ECDD20C5DA5400472BD5 /* View Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +126,9 @@
 		D0714C8820C5D6FE00AB14C6 /* silgilator */ = {
 			isa = PBXGroup;
 			children = (
+				D027933320D1F67500120462 /* Helper Classes */,
 				D059ECDE20C5DBBF00472BD5 /* Model Classes */,
+				D027933420D1F68C00120462 /* Protocol Classes */,
 				D059ECDD20C5DA5400472BD5 /* View Classes */,
 				D0714C8920C5D6FF00AB14C6 /* AppDelegate.swift */,
 				D0714C8D20C5D6FF00AB14C6 /* Main.storyboard */,
