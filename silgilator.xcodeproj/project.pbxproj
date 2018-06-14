@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D027933620D1F94100120462 /* SigilatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027933520D1F94100120462 /* SigilatorHelper.swift */; };
+		D027933820D1F95800120462 /* SigilatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027933720D1F95800120462 /* SigilatorProtocol.swift */; };
+		D027933A20D1F97200120462 /* SigilatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027933920D1F97200120462 /* SigilatorModel.swift */; };
 		D0714C8A20C5D6FF00AB14C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0714C8920C5D6FF00AB14C6 /* AppDelegate.swift */; };
 		D0714C8C20C5D6FF00AB14C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0714C8B20C5D6FF00AB14C6 /* ViewController.swift */; };
 		D0714C8F20C5D6FF00AB14C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0714C8D20C5D6FF00AB14C6 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D027933520D1F94100120462 /* SigilatorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilatorHelper.swift; sourceTree = "<group>"; };
+		D027933720D1F95800120462 /* SigilatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilatorProtocol.swift; sourceTree = "<group>"; };
+		D027933920D1F97200120462 /* SigilatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilatorModel.swift; sourceTree = "<group>"; };
 		D0714C8620C5D6FE00AB14C6 /* silgilator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = silgilator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0714C8920C5D6FF00AB14C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0714C8B20C5D6FF00AB14C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 		D027933320D1F67500120462 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D027933520D1F94100120462 /* SigilatorHelper.swift */,
 			);
 			path = "Helper Classes";
 			sourceTree = "<group>";
@@ -84,6 +91,7 @@
 		D027933420D1F68C00120462 /* Protocol Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D027933720D1F95800120462 /* SigilatorProtocol.swift */,
 			);
 			path = "Protocol Classes";
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 		D059ECDE20C5DBBF00472BD5 /* Model Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D027933920D1F97200120462 /* SigilatorModel.swift */,
 			);
 			path = "Model Classes";
 			sourceTree = "<group>";
@@ -291,7 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D027933A20D1F97200120462 /* SigilatorModel.swift in Sources */,
 				D0714C8C20C5D6FF00AB14C6 /* ViewController.swift in Sources */,
+				D027933620D1F94100120462 /* SigilatorHelper.swift in Sources */,
+				D027933820D1F95800120462 /* SigilatorProtocol.swift in Sources */,
 				D0714C8A20C5D6FF00AB14C6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
