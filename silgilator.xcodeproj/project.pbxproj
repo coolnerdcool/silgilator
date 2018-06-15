@@ -10,6 +10,7 @@
 		D027933620D1F94100120462 /* SigilatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027933520D1F94100120462 /* SigilatorHelper.swift */; };
 		D027933820D1F95800120462 /* SigilatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027933720D1F95800120462 /* SigilatorProtocol.swift */; };
 		D027933A20D1F97200120462 /* SigilatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027933920D1F97200120462 /* SigilatorModel.swift */; };
+		D053AA1C20D35A2A00D768F6 /* SigilatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D053AA1B20D35A2A00D768F6 /* SigilatorPresenter.swift */; };
 		D0714C8A20C5D6FF00AB14C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0714C8920C5D6FF00AB14C6 /* AppDelegate.swift */; };
 		D0714C8C20C5D6FF00AB14C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0714C8B20C5D6FF00AB14C6 /* ViewController.swift */; };
 		D0714C8F20C5D6FF00AB14C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0714C8D20C5D6FF00AB14C6 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		D027933520D1F94100120462 /* SigilatorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilatorHelper.swift; sourceTree = "<group>"; };
 		D027933720D1F95800120462 /* SigilatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilatorProtocol.swift; sourceTree = "<group>"; };
 		D027933920D1F97200120462 /* SigilatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilatorModel.swift; sourceTree = "<group>"; };
+		D053AA1B20D35A2A00D768F6 /* SigilatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilatorPresenter.swift; sourceTree = "<group>"; };
 		D0714C8620C5D6FE00AB14C6 /* silgilator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = silgilator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0714C8920C5D6FF00AB14C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0714C8B20C5D6FF00AB14C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 			path = "Protocol Classes";
 			sourceTree = "<group>";
 		};
+		D053AA1A20D359E700D768F6 /* Presenter Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D053AA1B20D35A2A00D768F6 /* SigilatorPresenter.swift */,
+			);
+			path = "Presenter Classes";
+			sourceTree = "<group>";
+		};
 		D059ECDD20C5DA5400472BD5 /* View Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 			children = (
 				D027933320D1F67500120462 /* Helper Classes */,
 				D059ECDE20C5DBBF00472BD5 /* Model Classes */,
+				D053AA1A20D359E700D768F6 /* Presenter Classes */,
 				D027933420D1F68C00120462 /* Protocol Classes */,
 				D059ECDD20C5DA5400472BD5 /* View Classes */,
 				D0714C8920C5D6FF00AB14C6 /* AppDelegate.swift */,
@@ -305,6 +316,7 @@
 				D027933620D1F94100120462 /* SigilatorHelper.swift in Sources */,
 				D027933820D1F95800120462 /* SigilatorProtocol.swift in Sources */,
 				D0714C8A20C5D6FF00AB14C6 /* AppDelegate.swift in Sources */,
+				D053AA1C20D35A2A00D768F6 /* SigilatorPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol sigilatorViewable: Codable {
+    func fetch()
+}
